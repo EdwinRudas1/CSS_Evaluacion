@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+.contenedor{
+  margin: auto;
+  width: 900px;
+  font-family: 'Dancing Script', cursive;
+}
+header{
+  background-color: #5b7989;
+  height: 70px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-flow:row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo h1{
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 0 0 #02010a;
+  padding-left: 20px;
+}
+nav .links a{
+  font-size: 1.5em;
+  padding: 20px;
+  color: white;
+}
+.opc3{
+  text-decoration: none;
+}
+.contenedor2{
+  width: 100%;
+  height: 425px;
+  background: #d5c85f;
+  display: flex;
+  flex-direction: column;
+  flex-flow:wrap;
+}
+.bloque1, .bloque2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-flow:row;
+}
+.imag{
+  width: 33.33%;
+  height: 100%;
+  text-align: center;
+}
+.imag img{
+  width: 80%;
+  padding: 10px;
+}
+.imagen1 {
+  filter: blur(10px);
+}
+.imagen3 {
+  filter: sepia(90%);
+}
+.imagen2, .imagen4, .imagen6 {
+  filter: grayscale(100%);
+}
+footer, #piePagina{
+  background-color: #C6d5c5;
+  width: 100%;
+  height: 200px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: space-around;
+  font-size: 17px;
+}
+#contacto #terminos #redes #derechos p{
+  width: 25%;
+  height: 100%;
+  border: 1px solid black;
+  font-size: 17px;
+
+}
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+
+      .contenedor{
+        width: 90%;
+        margin: auto;
+      }
+      header{
+        width: 100%;
+        height:100%;
+
+      }
+      .logo{
+        text-align: left;
+      }
+      .links{
+        text-align: right;
+      }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+      .contenedor{
+        width: 90%;
+        margin: auto;
+      }
+      header{
+        height: 200%;
+        display: flex;
+        flex-direction:column;
+        flex-flow: wrap;
+        justify-content: center;
+        font-size: 1em
+      }
+      .logo, .links{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+      }
+      .links{
+        padding-bottom: 15px;
+      }
+      .contenedor2{
+        width: 100%;
+        height: 200%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+      }
+      .bloque1, .bloque2 {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction:column;
+        flex-flow:wrap;
+      }
+      .imag{
+        width: 100%;
+        height: 33.33%;
+        text-align: center;
+      }
+      footer #piePagina{
+        width: 85%;
+        height: 600px;
+        display: flex;
+        flex-flow: column;
+        text-align:left;
+        padding-left: 15%;
+      }
+      nav .links a{
+        font-size: 1.5em;
+        padding: 5px;
+        color: white;
+      }
+}
